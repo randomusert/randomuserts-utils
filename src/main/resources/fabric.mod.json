@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "rsts-utils",
+	"version": "${version}",
+	"name": "Randomusert's utils",
+	"description": "Utils from Randomusert. Provides all kinds of stuff like more items, QOL recipes and much much more.",
+	"authors": [
+		"Randomusert"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/rsts-utils/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.randomusert.mods.rstsutils.RandomusertSUtils"
+		],
+		"client": [
+			"io.github.randomusert.mods.rstsutils.client.RandomusertSUtilsClient"
+		]
+	},
+	"mixins": [
+		"rsts-utils.mixins.json",
+		{
+			"config": "rsts-utils.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
