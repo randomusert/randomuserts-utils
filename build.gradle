@@ -105,7 +105,7 @@ publishing {
 	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
 	repositories {
 		maven {
-			name = "personal-maven-repository-releases"
+			name = "RandomusertsMaven"
 
 			url = version.toString().endsWith("DEV") ? "https://raw.githubusercontent.com/randomusert/maven-repository/main/repository/snapshots" : "https://raw.githubusercontent.com/randomusert/maven-repository/main/repository/releases"
 		}
