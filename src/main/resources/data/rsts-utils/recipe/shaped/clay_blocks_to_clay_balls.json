@@ -2,16 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "L  ",
-    "L  ",
+    "   ",
     "   "
   ],
   "key": {
-    "L": {
-      "tag": "minecraft:logs"
-    }
+    "L": "minecraft:clay"
   },
   "result": {
-    "count": 16,
-    "id": "minecraft:stick"
+    "count": 4,
+    "id": "minecraft:clay_ball"
   }
 }
