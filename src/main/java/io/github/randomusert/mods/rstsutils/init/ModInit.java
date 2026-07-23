@@ -6,7 +6,7 @@ import net.fabricmc.loader.api.FabricLoader;
 
 public class ModInit {
 
-    public void detectMods() {
+    public static void detectMods() {
         if (FabricLoader.getInstance().isModLoaded("refinedstorage")) {
             LoggingHelper.info("Refined Storage Found. Initializing  storage disks and storage parts");
             initRSCompat();
@@ -14,7 +14,7 @@ public class ModInit {
         }
     }
 
-    private void initRSCompat() {
+    private static void initRSCompat() {
         ModRSItemStorage.initialize();
     }
 }

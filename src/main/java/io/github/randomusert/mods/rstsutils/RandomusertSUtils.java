@@ -1,6 +1,7 @@
 package io.github.randomusert.mods.rstsutils;
 
 import io.github.randomusert.mods.rstsutils.api.LoggingHelper;
+import io.github.randomusert.mods.rstsutils.init.ModInit;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -20,6 +21,7 @@ public class RandomusertSUtils implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Hello Fabric world!");
 		LoggingHelper.info("Test from the Randomusert's Utils API");
+		ModInit.detectMods();
 	}
 
 	public static Identifier id(String path) {
