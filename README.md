@@ -15,14 +15,7 @@ This mod has a public API.
 To use it, add the following to your repositories:
 ```groovy
 repositories {
-    maven {
-        name = "RandomusertsMaven"
-        setUrl("https://raw.githubusercontent.com/randomusert/maven-repository/main/repository/releases")
-    }
-    maven {
-        name = "RandomusertsMavenSnapshots"
-        setUrl("https://raw.githubusercontent.com/randomusert/maven-repository/main/repository/snapshots")
-    }
+    mavenCentral()
 }
 ```
 
