@@ -1,5 +1,6 @@
 package io.github.randomusert.mods.rstsutils;
 
+import io.github.randomusert.mods.rstsutils.api.LoggingHelper;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -17,11 +18,8 @@ public class RandomusertSUtils implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
-
 		LOGGER.info("Hello Fabric world!");
+		LoggingHelper.info("Test from the Randomusert's Utils API");
 	}
 
 	public static Identifier id(String path) {
